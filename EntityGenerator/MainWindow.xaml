@@ -1,0 +1,40 @@
+﻿<Controls:MetroWindow x:Class="EntityGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntityGenerator"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        Title="实体生成工具" Height="450" Width="800" ResizeMode="CanMinimize">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="连接字符串：" VerticalAlignment="Center" HorizontalAlignment="Left" Width="110" Padding="5,12" Margin="10,22,10,354.109" Height="45" FontSize="13"/>
+            <TextBox Text="请输入连接字符串" Name="connectionString" HorizontalAlignment="Left"  Width="620" Padding="5,8" Margin="20,22,10,354.109" FontSize="13"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="数据表名称：" VerticalAlignment="Center" HorizontalAlignment="Left" Width="110" Padding="5,12" Margin="10,95,10,282.109" Height="45" FontSize="13"/>
+            <TextBox Text="请输入数据表名称" Name="tableName" HorizontalAlignment="Left"  Width="620" Padding="5,8" Margin="20,95,10,282.109" FontSize="13"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="数据库类型：" VerticalAlignment="Center" HorizontalAlignment="Left" Width="110" Padding="5,12" Margin="10,168,10,210.109" Height="45" FontSize="13"/>
+            <!--<TextBox Text="请输入数据库类型" Name="databaseType" HorizontalAlignment="Left"  Width="620" Padding="5,8" Margin="20,168,10,210.109" FontSize="13"/>-->
+            <ComboBox Padding="5,12" Margin="20,168,10,210.109"  Width="100" FontSize="14" IsEnabled="False">
+                <ComboBoxItem IsSelected="True" Name="Oracle">Oracle</ComboBoxItem>
+                <ComboBoxItem Name="MySQL">MySQL</ComboBoxItem>
+                <ComboBoxItem Name="SqlServer">SqlServer</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="文件生成路径：" VerticalAlignment="Center" HorizontalAlignment="Left" Width="110" Padding="5,12" Margin="10,241,10,138.109" Height="45" FontSize="13"/>
+            <TextBox Text="请手动输入路径" Name="filePath" HorizontalAlignment="Left"  Width="441" Padding="5,8" Margin="20,241,10,138.109" FontSize="13"/>
+            <Label Content="或" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Padding="5,12" Margin="20,241,10,138.109" Height="40" FontSize="13"/>
+            <Button Content="选择路径" Margin="0,241,0,138.109" Width="99" FontSize="14" Click="BtnSelectPath_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="测试连接" Margin="-5,329,0,41.109" Width="90" FontSize="18" Click="BtnTestConnect_Click"/>
+            <Button Content="生成实体" Margin="10,329,0,41.109" Width="90"  FontSize="18" Click="BtnGenerate_Click"/>
+        </StackPanel>
+    </Grid>
+
+</Controls:MetroWindow>
