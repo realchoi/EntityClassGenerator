@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityGenerator", "EntityGenerator\EntityGenerator.csproj", "{01E6873F-45B2-4BEE-8B1E-136D7DEFB65D}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EntityClassGenerator", "EntityClassGenerator\EntityClassGenerator.vdproj", "{4353F4B6-687A-4E7E-BFC2-4FCEF905F4A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{01E6873F-45B2-4BEE-8B1E-136D7DEFB65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01E6873F-45B2-4BEE-8B1E-136D7DEFB65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01E6873F-45B2-4BEE-8B1E-136D7DEFB65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4353F4B6-687A-4E7E-BFC2-4FCEF905F4A4}.Debug|Any CPU.ActiveCfg = Debug
+		{4353F4B6-687A-4E7E-BFC2-4FCEF905F4A4}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
